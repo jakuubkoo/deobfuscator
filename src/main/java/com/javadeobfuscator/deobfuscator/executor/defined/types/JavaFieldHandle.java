@@ -16,16 +16,18 @@
 
 package com.javadeobfuscator.deobfuscator.executor.defined.types;
 
-public class JavaMethodHandle extends JavaHandle {
+public class JavaFieldHandle extends JavaHandle {
     public final String clazz;
     public final String name;
     public final String desc;
     public final String type;
+    public final boolean setter;
 
-    public JavaMethodHandle(String clazz, String name, String desc, String type) {
+    public JavaFieldHandle(String clazz, String name, String desc, String type, boolean setter) {
         this.clazz = clazz;
         this.name = name;
         this.desc = desc;
         this.type = type;
+        this.setter = setter;
     }
 }
